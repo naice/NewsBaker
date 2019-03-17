@@ -1,0 +1,11 @@
+[Unit]
+Description=News Baker Service
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/home/pi/NetCoreApps/NewsBaker/NewsBaker
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target
